@@ -99,15 +99,6 @@ html, body{
     padding: 20px;
 }
 
-.image1 {
-    position: relative;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-    max-width: 200px; 
-    min-width: 150px;
-    margin: 0 10px;
-}
-
 .image {
     position: relative;
     cursor: pointer;
@@ -117,16 +108,10 @@ html, body{
     margin: 0 10px;
 }
 
-.image1 img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10%;
-}
-
 .image img {
     max-width: 100%;
     height: auto;
-    border-radius: 50%;
+    border-radius: 25%;
 }
 
 .text {
