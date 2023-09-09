@@ -17,6 +17,7 @@ html, body{
     text-align: center;
     padding: 7rem 0;
     width: 100%;
+
 }
 
 .header-image {
@@ -73,7 +74,7 @@ html, body{
     font-family: Arial, sans-serif;
 }
 
-.character-list {
+.character-list  {
     font-size: 1.2rem;
     list-style-type: disc;
     padding-left: 40px;
