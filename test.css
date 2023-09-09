@@ -1,0 +1,344 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    padding: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:black;
+    line-height: 1.5rem;
+}
+.header {
+    background-image: url("pics/451635.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 7rem 0;
+    width: 100%;
+}
+
+.header-image {
+    border-radius: 203px;
+    width: 330px;
+    border: 3px solid black;
+}
+
+.header-title {
+    color: white;
+    margin-top: 1rem;
+}
+.info-content {
+    background-color: #000000;
+}
+
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 10%;
+}
+
+.about-img-container {
+    flex: 1;
+    padding: 1rem;
+    text-align: center;
+    max-width: 600px;
+}
+
+.about-img {
+    width: 450px;
+    border-radius: 20px;
+}
+
+.character-details {
+    flex: 1;
+    padding: 0.5rem;
+}
+
+.as-title {
+    font-size: 2rem;
+    color: red;
+    margin-bottom: 1rem;
+}
+
+.description {
+    font-size: 1.2rem;
+    text-align: justify;
+    margin-bottom: 1.5rem;
+    font-family: Arial, sans-serif;
+}
+
+.characteristics-list {
+    font-size: 1.2rem;
+    list-style-type: disc;
+    padding-left: 20px;
+    font-family: Arial, sans-serif;
+}
+.image-section {
+    text-align: center;
+    padding: 2rem 0;
+    color: #040203;
+}
+
+.image-section h2 {
+    color: red;
+    margin-bottom: 1rem;
+}
+.image-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 20px;
+}
+
+.image1 {
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    max-width: 200px; 
+    min-width: 150px;
+    margin: 0 10px;
+}
+
+.image {
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    max-width: 200px; 
+    min-width: 150px;
+    margin: 0 10px;
+}
+
+.image1 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10%;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center; /* Center the text horizontally within the container */
+}
+
+.image:hover {
+    transform: scale(1.05);
+}
+
+.image:hover .text {
+    opacity: 1;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+.image-section img {
+    max-width: 100%; 
+    display: block; 
+    margin: 0 auto; 
+    border-radius: 10px;
+}
+
+.image-caption {
+    font-size: 1rem;
+    color: rgb(231, 51, 51);
+    margin-top: 0.5rem;
+}
+.caption {
+    font-family: Arial, sans-serif;
+    font-style: italic;
+    color: rgb(169, 169, 169);
+  }
+
+#footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box; /* Add box-sizing for better layout handling */
+    }
+    
+    html, body {
+        padding: 0;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: black;
+        line-height: 1.5rem;
+    }
+    
+    .header {
+        background-image: url("pics/451635.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        padding: 5rem 0; /* Reduce padding for smaller screens */
+        width: 100%;
+    }
+    
+    .header-image {
+        border-radius: 203px;
+        width: 250px; /* Adjust the header image size for smaller screens */
+        border: 3px solid black;
+    }
+    
+    .header-title {
+        color: white;
+        margin-top: 1rem;
+    }
+    
+    .info-content {
+        background-color: #000000;
+    }
+    
+    .about-section {
+        display: flex;
+        flex-direction: column; /* Stack content vertically on smaller screens */
+        align-items: center;
+        padding: 5% 5%; /* Adjust padding for smaller screens */
+    }
+    
+    .about-img-container {
+        flex: 1;
+        padding: 1rem;
+        text-align: center;
+        max-width: 600px;
+    }
+    
+    .about-img {
+        width: 100%; /* Make the about image span the full width of the container */
+        max-width: none; /* Remove max-width for the about image */
+        border-radius: 20px;
+    }
+    
+    .character-details {
+        flex: 1;
+        padding: 0.5rem;
+        text-align: center; /* Center-align character details on smaller screens */
+    }
+    
+    .as-title {
+        font-size: 1.5rem; /* Adjust the font size for the section title */
+        color: red;
+        margin-bottom: 0.5rem; /* Adjust margin for the section title */
+    }
+    
+    .description {
+        font-size: 1rem; /* Adjust font size for the description */
+        text-align: justify;
+        margin-bottom: 1rem; /* Adjust margin for the description */
+        font-family: Arial, sans-serif;
+    }
+    
+    .characteristics-list {
+        font-size: 1rem; /* Adjust font size for the characteristics list */
+        list-style-type: disc;
+        padding-left: 10px; /* Adjust left padding for the list items */
+        font-family: Arial, sans-serif;
+    }
+    
+    .image-section {
+        text-align: center;
+        padding: 2rem 0;
+        color: #040203;
+    }
+    
+    .image-section h2 {
+        color: red;
+        margin-bottom: 1rem;
+    }
+    
+    .image-container {
+        display: flex;
+        flex-wrap: wrap; /* Allow images to wrap on smaller screens */
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    .image1, .image {
+        position: relative;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+        width: 100%; /* Make images span full width on smaller screens */
+        max-width: 200px;
+        margin: 10px; /* Adjust spacing between images */
+    }
+    
+    .image1 img, .image img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10%;
+    }
+    
+    .text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        padding: 10px;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        text-align: center;
+    }
+    
+    .image:hover {
+        transform: scale(1.05);
+    }
+    
+    .image:hover .text {
+        opacity: 1;
+    }
+    
+    .image-section img {
+        max-width: 100%;
+        display: block;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+    
+    .image-caption {
+        font-size: 1rem;
+        color: rgb(231, 51, 51);
+        margin-top: 0.5rem;
+    }
+    
+    .caption {
+        font-family: Arial, sans-serif;
+        font-style: italic;
+        color: rgb(169, 169, 169);
+    }
+    
+    #footer {
+        background-color: #333;
+        color: white;
+        padding: 10px;
+        text-align: center;
+    }
+}
