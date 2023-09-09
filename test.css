@@ -78,6 +78,7 @@ html, body{
     list-style-type: disc;
     padding-left: 20px;
     font-family: Arial, sans-serif;
+    text-align: left;
 }
 .image-section {
     text-align: center;
@@ -330,4 +331,83 @@ html, body{
         padding: 10px;
         text-align: center;
     }
+    
+/* Media query for tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .header {
+        padding: 4rem 0;
+    }
+
+    .header-image {
+        width: 250px;
+    }
+
+    .about-section {
+        padding: 3% 5%;
+    }
+
+    .about-img {
+        border-radius: 15px;
+    }
+
+    .as-title {
+        font-size: 1.5rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .character-list {
+        font-size: 1rem;
+    }
+
+    .image1, .image {
+        max-width: 150px;
+    }
+
+    .image-caption {
+        font-size: 0.8rem;
+    }
+}
+
+
+/* Media query for smartphones (max-width: 768px) */
+@media (max-width: 768px) {
+    .header {
+        padding: 3rem 0;
+    }
+
+    .header-image {
+        width: 200px;
+    }
+
+    .about-section {
+        padding: 2% 5%;
+    }
+
+    .about-img {
+        border-radius: 10px;
+    }
+
+    .as-title {
+        font-size: 1.2rem;
+    }
+
+    .description {
+        font-size: 0.9rem;
+    }
+
+    .character-list {
+        font-size: 0.9rem;
+    }
+
+    .image1, .image {
+        max-width: 100px;
+    }
+
+    .image-caption {
+        font-size: 0.7rem;
+    }
+}
 }
