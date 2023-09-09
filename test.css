@@ -29,6 +29,8 @@ html, body{
 .header-title {
     color: white;
     margin-top: 1rem;
+    text-shadow: 1px 1px 1px #000000;
+    font-size:xx-large;
 }
 .info-content {
     background-color: #000000;
