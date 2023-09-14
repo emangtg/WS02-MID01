@@ -90,11 +90,19 @@ html, body{
     color: red;
     margin-bottom: 1rem;
 }
+
 .image-container {
     display: flex;
     justify-content: center; 
     align-items: center; 
     padding: 20px;
+}
+.image-container1 {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 20px;
+    
 }
 
 .image {
@@ -105,8 +113,22 @@ html, body{
     min-width: 150px;
     margin: 0 10px;
 }
+.image1 {
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    max-width: 200px; 
+    min-width: 150px;
+    margin: 0 10px;
+}
 
 .image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20%;
+}
+
+.image1 img {
     max-width: 100%;
     height: auto;
     border-radius: 20%;
@@ -135,6 +157,21 @@ html, body{
 }
 
 .image-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+.image1:hover {
+    transform: scale(1.05);
+}
+
+.image1:hover .text {
+    opacity: 1;
+}
+
+.image1-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
