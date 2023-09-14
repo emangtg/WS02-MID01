@@ -95,7 +95,7 @@ html, body{
     display: flex;
     justify-content: center; 
     align-items: center; 
-    padding: 20px;
+    padding: 80px;
 }
 .image-container1 {
     display: flex;
@@ -131,7 +131,7 @@ html, body{
 .image1 img {
     max-width: 100%;
     height: auto;
-    border-radius: 20%;
+    border-radius: 70%;
 }
 
 .text {
