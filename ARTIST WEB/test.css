@@ -306,6 +306,14 @@ html, body{
         align-items: center;
         padding: 20px;
     }
+
+    .image-container1 {
+        display: flex;
+        flex-wrap: wrap; /* Allow images to wrap on smaller screens */
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
     
     .image1, .image {
         position: relative;

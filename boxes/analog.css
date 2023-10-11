@@ -1,0 +1,175 @@
+
+html, body {
+	font-size: 80%;
+	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	letter-spacing: 0.15em;	
+	background-color: #efefef;
+}
+			
+#page {
+	max-width: 940px;
+	min-width: 720px;
+	margin: 10px auto 10px auto;
+	padding: 20px;
+	border: 4px double #000;
+	background-color: #ffffff;
+}
+
+#logo {
+	width: 150px;
+	margin: 10px auto 25px auto;
+}
+
+ul {
+	width: 570px;
+	padding: 15px;
+	margin: 0px auto 0px auto;
+	border-top: 2px solid #000;
+	border-bottom: 1px solid #000;
+	text-align: center;
+}
+			
+li {
+	display: inline;
+	margin: 0px 3px;
+}
+.image-container1 {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 20px;
+    
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+    border-radius: 20%;
+}
+
+.image1 {
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    max-width: 200px; 
+    min-width: 150px;
+    margin: 0 10px;
+}
+
+.image1 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 60%;
+}
+.image-caption {
+    font-size: 1rem;
+    color: rgb(231, 51, 51);
+    margin-top: 0.5rem;
+}
+
+.image1:hover {
+    transform: scale(1.05);
+}
+
+.image1:hover .text {
+    opacity: 1;
+}
+
+
+p {
+	text-align: center;
+	width: 600px; 
+	margin: 20px auto 20px auto; 
+	font-weight: normal;
+}
+			
+a {
+	color: #000000;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 6px 18px 5px 18px;
+}
+a:hover, a.on {
+	color: #cc3333;
+	background-color: #ffffff;}
+
+    .image1 img, .image img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10%;
+    }
+	@media (max-width: 768px) {
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box; /* Add box-sizing for better layout handling */
+		}
+		
+		html, body {
+			padding: 0;
+			font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+			color: black;
+			line-height: 1.5rem;
+		}
+
+		.image1 img, .image img {
+			max-width: 100%;
+			height: auto;
+			border-radius: 20%;
+		}
+		   
+    .text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        padding: 10px;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        text-align: center;
+    }
+    
+    .image:hover {
+        transform: scale(1.05);
+    }
+    
+    .image:hover .text {
+        opacity: 1;
+    }
+	#page {
+        max-width: 100%; /* Full width on small screens */
+        padding: 10px;
+    }
+
+    ul {
+        padding: 10px; /* Reduce padding on small screens */
+    }
+
+    .image1 {
+        max-width: 100%; /* Full width on small screens */
+    }
+
+    p {
+        width: 100%; /* Full width on small screens */
+        margin: 10px auto 10px auto; /* Adjust margin for better spacing */
+    }
+	.image1, .image {
+        max-width: 100px;
+    }
+
+    .image-caption {
+        font-size: 0.7rem;
+    }
+}
+    
+		
